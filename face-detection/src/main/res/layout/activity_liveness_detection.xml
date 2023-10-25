@@ -30,31 +30,33 @@
         />
 
 
-
     <ImageView
         android:id="@+id/iv_face"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/frame_face"
+        android:layout_width="331dp"
+        android:layout_height="399dp"
         android:layout_marginTop="@dimen/margin_large"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/frameelipses"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="332dp"
+        android:layout_height="398dp"
+        android:background="@drawable/border_dash"
         app:layout_constraintBottom_toBottomOf="@id/iv_face"
-        app:layout_constraintTop_toTopOf="@id/iv_face"
         app:layout_constraintEnd_toEndOf="@id/iv_face"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/iv_face"
-        android:background="@drawable/border_dash"/>
+        app:layout_constraintTop_toTopOf="@id/iv_face"
+        app:layout_constraintVertical_bias="1.0" />
+
     <View
         android:id="@+id/view_top"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/black"
-        android:alpha="0.2"
+        android:alpha="0.5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/iv_face"/>
     <View
@@ -62,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/black"
-        android:alpha="0.2"
+        android:alpha="0.5"
         app:layout_constraintTop_toBottomOf="@id/iv_face"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -70,7 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/black"
-        android:alpha="0.2"
+        android:alpha="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/iv_face"
         app:layout_constraintTop_toBottomOf="@id/view_top"
@@ -80,7 +82,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/black"
-        android:alpha="0.2"
+        android:alpha="0.5"
         app:layout_constraintStart_toEndOf="@id/iv_face"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_top"
@@ -90,7 +92,7 @@
         android:id="@+id/tv_instruction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tolong Arahkan Wajah Ke Frame Wajah"
+        android:text="Please move your face to the centre of the face frame"
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_margin="16dp"
@@ -104,14 +106,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:textSize="48sp"
-        tools:text="21"
         android:padding="8dp"
-        android:textColor="#0D59DC"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#2BC3FF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_instruction"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_face"
-        app:layout_constraintBottom_toTopOf="@id/tv_instruction"/>
+        tools:text="21" />
 
     <ImageView
         android:id="@+id/iv_back"
